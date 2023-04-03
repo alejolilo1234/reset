@@ -53,8 +53,7 @@ function create_menu_crm() {
 
 function enqueue_plugin_code($hook) {
     if(str_contains($hook, 'reset')) {
-        // Header y footer
-
+        wp_enqueue_style('enqueue_plugin_index_css', plugins_url('public/css/index.css',__FILE__));
     }
 }
 
